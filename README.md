@@ -126,8 +126,7 @@ bookStoreApp/
 
 ---
 
-## Important Notes
-
-- **Email Service**: The `email.service.js` is currently set to **MOCK** mode. It logs email tokens to the console instead of sending actual emails. This is perfect for testing without SMTP credentials.
-- **Stripe**: The payment controller includes a mock mode if the Stripe key is missing or set to a dummy value.
+> [!IMPORTANT]
+> - **Email Service**: The `email.service.js` is currently set to **MOCK** mode. It logs email tokens to the console instead of sending actual emails. This is perfect for testing without SMTP credentials.
+> - **Stripe**: The payment controller includes a mock mode if the Stripe key is missing or set to a dummy value.
 
