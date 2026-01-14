@@ -1,4 +1,4 @@
-# 📚 Professional Bookstore & EdTech Platform
+<p align="center"> <img width="339" height="287" alt="SkillN Logo" src="https://github.com/user-attachments/assets/0f4d79e1-b3b4-41d8-ba9d-4b3e8a641087" /> <br> <strong>AI-Powered EdTech Learning and Career Platform</strong> </p><h1 align="center">SkillN: Your Smart Career Path</h1><p align="center"> <em>The next-generation platform transforming professional development through AI-driven insights and personalized learning.</em> </p>
 
 A comprehensive **Full-Stack Web Application** (MERN Stack) combining an **Online Bookstore** with advanced **EdTech Features**. This platform allows users to buy books, enroll in courses, and leverage AI-powered tools for career advancement.
 
