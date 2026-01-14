@@ -1,25 +1,23 @@
 <p align="center"> <img width="339" height="287" alt="SkillN Logo" src="https://github.com/user-attachments/assets/0f4d79e1-b3b4-41d8-ba9d-4b3e8a641087" /> <br> <strong>AI-Powered EdTech Learning and Career Platform</strong> </p><h1 align="center">SkillN: Your Smart Career Path</h1><p align="center"> <em>The next-generation platform transforming professional development through AI-driven insights and personalized learning.</em> </p>
 
-A comprehensive **Full-Stack Web Application** (MERN Stack) combining an **Online Bookstore** with advanced **EdTech Features**. This platform allows users to buy books, enroll in courses, and leverage AI-powered tools for career advancement.
+A comprehensive **Full-Stack Web Application (MERN Stack)** combining advanced **Course Management** with **EdTech Features**. This platform allows users to enroll in courses, track learning progress, and leverage AI-powered tools for career advancement.
 
-## 🚀 Key Features
+## Key Features
 
-### 🛒 Bookstore & E-commerce
+### EdTech & Online Learning
+- **Course Platform**: Enroll in and access educational courses.
+- **My Learning Dashboard**: Dedicated student dashboard to track progress.
 - **Book Catalog**: Browse and purchase books.
 - **Stripe Payments**: Secure payment processing for books and courses.
 - **Order Management**: Track orders and purchase history.
 
-### 🎓 EdTech & Online Learning
-- **Course Platform**: Enroll in and access educational courses.
-- **My Learning Dashboard**: Dedicated student dashboard to track progress.
-
-### 🤖 AI Career Tools (Powered by Groq/Llama 3)
+### AI Career Tools (Powered by Llama 3)
 - **Resume Analyzer**: Get detailed feedback on your resume.
 - **AI Interview Prep**: Generate custom interview questions based on your resume.
 - **LinkedIn Booster**: Optimize your LinkedIn profile with AI suggestions.
 - **Smart Prep**: Personalized study plans and interview guides.
 
-### 👥 Role-Based Access
+### Role-Based Access
 - **Admin Dashboard**: Manage books, courses, users, and purchases.
 - **Teacher Dashboard**: Create and manage courses.
 - **Book Seller Dashboard**: Manage book inventory.
@@ -27,7 +25,7 @@ A comprehensive **Full-Stack Web Application** (MERN Stack) combining an **Onlin
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: React.js (Vite)
@@ -41,10 +39,6 @@ A comprehensive **Full-Stack Web Application** (MERN Stack) combining an **Onlin
 - **Database**: MongoDB (Mongoose ODM)
 - **Authentication**: JWT & bcryptjs
 - **Payment**: Stripe API
-
-### Services
-- **AI Integration**: Groq API (Llama 3 models)
-- **Email**: Custom mock email service (ready for SendGrid/Nodemailer integration)
 
 ---
 
@@ -70,14 +64,14 @@ bookStoreApp/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v18+ recommended)
 - MongoDB (Local or Atlas URI)
 - Stripe Account (for payments)
 
-### 1️⃣ Backend Setup
+### Backend Setup
 
 1.  Navigate to the `Backend` directory:
     ```bash
@@ -100,7 +94,7 @@ bookStoreApp/
     ```
     _The server will run on `http://localhost:4000`._
 
-### 2️⃣ Frontend Setup
+### Frontend Setup
 
 1.  Navigate to the `Frontend` directory:
     ```bash
@@ -110,11 +104,7 @@ bookStoreApp/
     ```bash
     npm install
     ```
-3.  (Optional) Check `src/services/groqService.ts` for API Key configuration (currently using a demo key). For production, move this to a `.env` file:
-    ```env
-    VITE_GROQ_API_KEY=your_groq_api_key
-    ```
-4.  Run the development server:
+3.  Run the development server:
     ```bash
     npm run dev
     ```
@@ -122,7 +112,7 @@ bookStoreApp/
 
 ---
 
-## 🔐 API Endpoints Overview
+## API Endpoints Overview
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -136,11 +126,8 @@ bookStoreApp/
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Email Service**: The `email.service.js` is currently set to **MOCK** mode. It logs email tokens to the console instead of sending actual emails. This is perfect for testing without SMTP credentials.
-- **AI Keys**: The Groq API key is currently hardcoded in `groqService.ts` for demonstration. **Rotate this key and move it to `.env` before public deployment.**
 - **Stripe**: The payment controller includes a mock mode if the Stripe key is missing or set to a dummy value.
 
-## 📄 License
-ISC License.
